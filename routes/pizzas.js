@@ -1,6 +1,8 @@
 const { Router } = require ('express')
 const router = Router()
-const Pizza = require('../models/Pizza')
+
+const pizzaController = require('../controllers/Pizza')
+
 
 const pizzas = [
     {
@@ -28,13 +30,10 @@ router.get('/:name', (req, res)=>{
 
     const  { name }  = req.params
 
-
     const pizza = pizzas.find((p)=> p.name === name )
     console.log(pizza)
     res.send(pizza)
-
 })
-
 router.post('/new',(req, res)=>{
 
     let pizza = {}
@@ -48,12 +47,15 @@ router.post('/new',(req, res)=>{
     res.send(pizzas)
 
 })
-router.post('/add',(req, res)=>{
 
-    let { ...pizzaParams} = req.body
 
-    let newPizza = Pizza.create(...pizzaParams)
-    res.sendStatus(201)
-})
+router.get('/show/:name', pizzaController.findPizza)
+router.get('/findAll', pizzaController.findAllPizza)
+
+router.post('/add', pizzaController.createPizza)
+router.put('/update/:name', pizzaController.updatePizza)
+router.delete('/delete/:name', pizzaController.deletePizza)
+
+
 
 module.exports = router
