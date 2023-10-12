@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
-const port = 3000
-const pizzaRoutes = require('./routes/pizzas')
+const port = 3001
+const buritosRoutes = require('./routes/buritos')
 const mongoose = require('mongoose')
 
 mongoose
@@ -11,9 +11,9 @@ mongoose
 
 app.use(express.json())
 
-app.use('/api/pizzas', pizzaRoutes)
+app.use('/api/buritos', buritosRoutes)
 
-app.listen(port, ()=>{
-    console.log("knock knock knock knock")
+
+app.listen(port,()=>{
+    console.log("knock")
 })
-

@@ -3,9 +3,12 @@
 
 const mongoose = require('mongoose')
 
-const PizzaSchema = new mongoose.Schema({
+const BuritosSchema = new mongoose.Schema({
 
     name:{
+        type: mongoose.SchemaTypes.String
+    },
+    description:{
         type: mongoose.SchemaTypes.String
     },
     price: {
@@ -14,4 +17,4 @@ const PizzaSchema = new mongoose.Schema({
 
 })
 
-module.exports = mongoose.model('Pizza', PizzaSchema)
+module.exports = mongoose.model('Buritos', BuritosSchema)
