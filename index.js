@@ -11,10 +11,7 @@ mongoose
 
 app.use(express.json())
 
-
 app.use('/api/pizzas', pizzaRoutes)
-
-
 
 app.listen(port, ()=>{
     console.log("knock knock knock knock")
