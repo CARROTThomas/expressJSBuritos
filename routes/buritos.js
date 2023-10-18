@@ -2,18 +2,17 @@ const { Router } = require('express');
 const router = Router();
 
 const buritosController = require('../controllers/Buritos');
-
-
-
-
+const isAuth = require("../middleware/is-auth");
 
 // Routes utilisant le contrôleur
-router.get('/findAll', buritosController.findAllBuritos);
 
-router.get('/show/:name', buritosController.findBuritos);
+// FindALL
+router.get('/findAll', isAuth, buritosController.findAllBuritos);
 
-router.post('/add', buritosController.createBuritos);
-router.put('/update/:name', buritosController.updateBuritos);
-router.delete('/delete/:name', buritosController.deleteBuritos);
+// CRUD
+router.get('/show/:name', isAuth, buritosController.findBuritos);
+router.post('/add', isAuth, buritosController.createBuritos);
+router.put('/update/:name', isAuth, buritosController.updateBuritos);
+router.delete('/delete/:name', isAuth, buritosController.deleteBuritos);
 
 module.exports = router;
