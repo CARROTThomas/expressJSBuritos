@@ -57,7 +57,8 @@ app.use(
 );
 
 
-app.use('/api/buritos', buritosRoutes)
+
+app.use('/api/burritos', buritosRoutes)
 app.use('/api/user', UserRoutes)
 
 // test connection

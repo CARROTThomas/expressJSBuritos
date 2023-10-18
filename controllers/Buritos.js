@@ -61,4 +61,16 @@ const deleteBuritos = async (req, res) => {
     }
 };
 
-module.exports = { findBuritos, createBuritos, deleteBuritos, updateBuritos, findAllBuritos };
+
+const activateAPI = async (req, res) => {
+
+    try {
+        const newBurritos = await Buritos.create({name:'Burrito Caliente', description: 'Riz, haricots noirs, poulet épicé, salsa, avocat, fromage, crème sure', price: 12.14});
+        res.status(201).json(newBurritos);
+    } catch (error) {
+        res.status(500).json({ error: 'Une erreur est survenue lors de la création du Buritos.' });
+    }
+
+}
+
+module.exports = { findBuritos, createBuritos, deleteBuritos, updateBuritos, findAllBuritos, activateAPI };
