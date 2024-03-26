@@ -5,49 +5,19 @@
 
   <div class="accordion" id="accordionExample">
 
- <!-- Login -->
+ <!-- User -->
 <div class="accordion-item">
     <h2 class="accordion-header" id="headingLogin">
         <button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLogin" aria-expanded="false" aria-controls="collapseLogin">
-            Login
+            User
         </button>
     </h2>
     <div id="collapseLogin" class="accordion-collapse collapse" aria-labelledby="headingLogin" data-bs-parent="#accordionExample">
         <div class="accordion-body">
             <ul>
-                <li>Login: <code>POST user/login</code></li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-<!-- Register -->
-<div class="accordion-item">
-    <h2 class="accordion-header" id="headingRegister">
-        <button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRegister" aria-expanded="false" aria-controls="collapseRegister">
-            Register
-        </button>
-    </h2>
-    <div id="collapseRegister" class="accordion-collapse collapse" aria-labelledby="headingRegister" data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-            <ul>
-                <li>Register: <code>POST user/register</code></li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-<!-- Logout -->
-<div class="accordion-item">
-    <h2 class="accordion-header" id="headingLogout">
-        <button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLogout" aria-expanded="false" aria-controls="collapseLogout">
-            Logout
-        </button>
-    </h2>
-    <div id="collapseLogout" class="accordion-collapse collapse" aria-labelledby="headingLogout" data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-            <ul>
-                <li>Logout: <code>POST user/logout</code></li>
+               <li>Register: <code>POST user/register</code></li>
+               <li>Login: <code>POST user/login</code></li>
+               <li>Logout: <code>POST user/logout</code></li>
             </ul>
         </div>
     </div>
