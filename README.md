@@ -15,7 +15,7 @@
     <div id="collapseLogin" class="accordion-collapse collapse" aria-labelledby="headingLogin" data-bs-parent="#accordionExample">
         <div class="accordion-body">
             <ul>
-                <li>Login: <code>POST /login</code></li>
+                <li>Login: <code>POST user/login</code></li>
             </ul>
         </div>
     </div>
@@ -31,7 +31,7 @@
     <div id="collapseRegister" class="accordion-collapse collapse" aria-labelledby="headingRegister" data-bs-parent="#accordionExample">
         <div class="accordion-body">
             <ul>
-                <li>Register: <code>POST /register</code></li>
+                <li>Register: <code>POST user/register</code></li>
             </ul>
         </div>
     </div>
@@ -47,7 +47,7 @@
     <div id="collapseLogout" class="accordion-collapse collapse" aria-labelledby="headingLogout" data-bs-parent="#accordionExample">
         <div class="accordion-body">
             <ul>
-                <li>Logout: <code>POST /logout</code></li>
+                <li>Logout: <code>POST user/logout</code></li>
             </ul>
         </div>
     </div>
@@ -62,11 +62,11 @@
     <div id="collapseCRUD" class="accordion-collapse collapse" aria-labelledby="headingCRUD" data-bs-parent="#accordionExample">
         <div class="accordion-body">
             <ul>
-               <li>Find All: <code>GET /findAll</code></li>
-                <li>Show: <code>GET /show/:name</code></li>
-                <li>Add: <code>POST /add</code></li>
-                <li>Update: <code>PUT /update/:name</code></li>
-                <li>Delete: <code>DELETE /delete/:name</code></li>
+               <li>Find All: <code>GET burritos/findAll</code></li>
+                <li>Show: <code>GET burritos/show/:name</code></li>
+                <li>Add: <code>POST burritos/add</code></li>
+                <li>Update: <code>PUT burritos/update/:name</code></li>
+                <li>Delete: <code>DELETE burritos/delete/:name</code></li>
             </ul>
         </div>
     </div>
@@ -82,7 +82,7 @@
     <div id="collapseActivateAPI" class="accordion-collapse collapse" aria-labelledby="headingActivateAPI" data-bs-parent="#accordionExample">
         <div class="accordion-body">
             <ul>
-                <li>Activate API: <code>GET /activateAPI</code></li>
+                <li>Activate API: <code>GET burritos/activateAPI</code></li>
             </ul>
         </div>
     </div>
