@@ -5,7 +5,7 @@
 
   <div class="accordion" id="accordionExample">
 
-    <!-- Login -->
+ <!-- Login -->
 <div class="accordion-item">
     <h2 class="accordion-header" id="headingLogin">
         <button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLogin" aria-expanded="false" aria-controls="collapseLogin">
@@ -52,23 +52,6 @@
         </div>
     </div>
 </div>
-
-<!-- Find All -->
-<div class="accordion-item">
-    <h2 class="accordion-header" id="headingFindAll">
-        <button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFindAll" aria-expanded="false" aria-controls="collapseFindAll">
-            Find All
-        </button>
-    </h2>
-    <div id="collapseFindAll" class="accordion-collapse collapse" aria-labelledby="headingFindAll" data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-            <ul>
-                <li>Find All: <code>GET /findAll</code></li>
-            </ul>
-        </div>
-    </div>
-</div>
-
 <!-- CRUD -->
 <div class="accordion-item">
     <h2 class="accordion-header" id="headingCRUD">
@@ -79,6 +62,7 @@
     <div id="collapseCRUD" class="accordion-collapse collapse" aria-labelledby="headingCRUD" data-bs-parent="#accordionExample">
         <div class="accordion-body">
             <ul>
+               <li>Find All: <code>GET /findAll</code></li>
                 <li>Show: <code>GET /show/:name</code></li>
                 <li>Add: <code>POST /add</code></li>
                 <li>Update: <code>PUT /update/:name</code></li>
